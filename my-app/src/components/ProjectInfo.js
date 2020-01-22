@@ -11,8 +11,8 @@ function ProjectInfo(props) {
     return (
         <Flex>
             <Box>
-                <Heading marginTop={40}>{props.children}</Heading>
-                <Image src={props.image}></Image>
+                <Heading textAlign='center' fontSize={[3, 4, 5]} marginTop={45} marginBottom={2}>{props.children}</Heading>
+                <Image paddingLeft={['22%']} paddingRight={['22%']} src={props.image}></Image>
                 <br></br>
                 <Text>{props.text}</Text>
                 <br></br>
