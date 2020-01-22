@@ -4,8 +4,6 @@ import theme from '@rebass/preset';
 import About from './About';
 import {
     Box,
-    Flex,
-    Link
 } from 'rebass';
 import NavBar from './NavBar'
 

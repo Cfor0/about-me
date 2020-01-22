@@ -1,12 +1,10 @@
 import React from 'react';
 import {
     Box,
-    Card,
     Image,
     Heading,
     Text,
-    Flex,
-    Link
+    Flex
 } from 'rebass';
 import linkPic from '../assets/images/linkPic.jpg'
 
