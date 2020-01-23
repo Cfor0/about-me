@@ -11,12 +11,13 @@ function ProjectInfo(props) {
     return (
         <Flex>
             <Box>
-                <Heading textAlign='center' fontSize={[3, 4, 5]} marginTop={45} marginBottom={2}>{props.children}</Heading>
-                <Image paddingLeft={['22%']} paddingRight={['22%']} src={props.image}></Image>
+                <Heading textAlign='center' fontSize={[4, 5, 6]} marginTop={45} marginBottom={2}>{props.children}</Heading>
+                <Image paddingLeft={['24%']} paddingRight={['22%']} src={props.image}></Image>
                 <br></br>
-                <Text>{props.text}</Text>
+                <hr></hr>
+                <Text fontSize={[20]}>{props.text}</Text>
                 <br></br>
-                <Text>{props.lang}</Text>
+                <Text fontStyle={'italic'}>{props.lang}</Text>
             </Box>
         </Flex>
     )
