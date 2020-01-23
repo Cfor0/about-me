@@ -9,22 +9,19 @@ import {
 import linkPic from '../assets/images/linkPic.jpg'
 
 const aboutStyle = {
-    fontSize: 16,
-    marginLeft: 5,
-    marginRight: 5,
-    
+    fontSize: 16,   
 }
 function About() {
     return (
         <Flex flexWrap='wrap' mx={2} my={2}>
 
-            <Box width='auto' p={5}>
+            <Box width={1/4} paddingTop={5}>
                 <Image sx={{
                     borderRadius: 8,
                 }} src={linkPic} />
             </Box>
 
-            <Box marginTop={40} width={2 / 3} style={aboutStyle} p={2}>
+            <Box paddingLeft={['5%']} paddingRight={['5%']} marginTop={40} width={3/4} style={aboutStyle} >
                 <Heading fontSize={[4, 5, 6]} textAlign='center'>About Me</Heading>
                 <br></br>
                 <Text >Most of my life has been dedicated to playing music, until I wrote my first line of code.<br></br>

@@ -11,7 +11,8 @@ import Macklist from '../assets/images/Macklist.gif';
 import Truckin from '../assets/images/Truckin.gif';
 import PeruseForBrews from '../assets/images/PeruseForBrews.gif';
 import ClickyGame from '../assets/images/ClickyGame.gif';
-import CustomerView from '../assets/images/customer-view.gif'
+import CustomerView from '../assets/images/customer-view.gif';
+import Footer from './Footer'
 
 
 class Projects extends React.Component {
@@ -53,6 +54,7 @@ class Projects extends React.Component {
                         <Box height='100px'></Box>
                     </Box>
                 </Flex>
+                <Footer />
             </ThemeProvider>
 
         )

@@ -6,11 +6,12 @@ import {
     Box,
 } from 'rebass';
 import NavBar from './NavBar'
+import Footer from './Footer'
 
 function Home() {
     return (
         <ThemeProvider theme={theme}>
-          <NavBar />
+            <NavBar />
             <Box
                 sx={{
                     px: 4,
@@ -25,7 +26,7 @@ function Home() {
                 <About></About>
                 <Box height='300px'></Box>
             </Box>
-
+            <Footer></Footer>
         </ThemeProvider>
 
     )
