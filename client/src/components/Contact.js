@@ -31,7 +31,7 @@ class Contact extends React.Component {
         e.preventDefault()
         const { name, email, message } = this.state
 
-        const form = await axios.post('/api/form', {
+        await axios.post('/api/form', {
             name,
             email,
             message
