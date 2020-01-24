@@ -9,12 +9,12 @@ class App extends React.Component {
   render() {
     return (
       <Router>
-        <Switch>
-          <Route exact path={'/'} component={Home}>
-            {/* <Route path={'home'} /> */}
-          </Route>
-          <Route exact path={'/projects'} component={Projects}></Route>
-        </Switch>
+        <div>
+          <Switch>
+            <Route exact path={'/'} component={Home}></Route>
+            <Route exact path={'/projects'} component={Projects}></Route>
+          </Switch>
+        </div>
       </Router>
     );
   }
