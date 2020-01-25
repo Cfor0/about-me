@@ -15,7 +15,11 @@ import CustomerView from '../assets/images/customer-view.gif';
 import Footer from './Footer'
 
 
+
 class Projects extends React.Component {
+    componentDidMount() {
+        console.log('yes it did')
+    }
     render() {
         return (
             <ThemeProvider theme={theme}>
