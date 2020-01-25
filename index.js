@@ -10,17 +10,17 @@ app.use(bodyParser.urlencoded({ extended: false }))
 
 if (process.env.NODE_ENV === "production") {
     app.use(express.static("client/build"));
-    app.get("/*", function(req, res) {
-      res.sendFile(path.join(__dirname, "./client/build/index.html"));
+    app.get("/*", function (req, res) {
+        res.sendFile(path.join(__dirname, "./client/build/index.html"));
     });
-  }
-  
-  else {
+}
+
+else {
     app.use(express.static(path.join(__dirname, '/client/public')));
-    app.get("/*", function(req, res) {
-      res.sendFile(path.join(__dirname, "./client/public/index.html"));
+    app.get("/*", function (req, res) {
+        res.sendFile(path.join(__dirname, "./client/public/index.html"));
     });
-  }
+}
 
 app.post('/api/form', (req, res) => {
     console.log(req.body)
@@ -36,23 +36,27 @@ app.post('/api/form', (req, res) => {
     `
 
         let transporter = nodemailer.createTransport({
-            host: "smtp.ethereal.email",
-            secure: false,
+            host: "smtp-mail.outlook.com",
+            secureConnection: false,
             port: 587,
-            auth: {
-                user: 'kassandra.beahan@ethereal.email',
-                pass: 'NCwCAF7RzJc7Bzc54Q'
-            },
             tls: {
+                ciphers: 'SSLv3',
                 rejectUnauthorized: false
-            }
+            },
+            auth: {
+                user: 'cfor0@outlook.com',
+                pass: '55f#97Co'
+            },
+            // tls: {
+            //     rejectUnauthorized: false
+            // }
         })
 
         let mailOptions = {
-            from: 'test@testaccount.com',
-            to: 'kassandra.beahan@ethereal.email',
+            from: 'cfor0@outlook.com',
+            to: 'cfor0@outlook.com',
             replyTo: 'test@testaccount.com',
-            subject: 'New Message',
+            subject: 'New Message From Portfolio',
             text: req.body.message,
             html: htmlEmail
         }
