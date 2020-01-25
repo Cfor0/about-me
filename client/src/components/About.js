@@ -6,7 +6,7 @@ import {
     Text,
     Flex
 } from 'rebass';
-import linkPic from '../assets/images/linkPic.jpg'
+import profilePic from '../assets/images/profilePic.jpg'
 
 const aboutStyle = {
     fontSize: 16,   
@@ -18,7 +18,7 @@ function About() {
             <Box width={1/4} paddingTop={5}>
                 <Image sx={{
                     borderRadius: 8,
-                }} src={linkPic} />
+                }} src={profilePic} />
             </Box>
 
             <Box paddingLeft={['5%']} paddingRight={['5%']} marginTop={40} width={3/4} style={aboutStyle} >
