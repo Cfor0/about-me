@@ -44,41 +44,39 @@ class Contact extends React.Component {
                 as='form'
                 onSubmit={this.handleSubmit}
                 py={3}>
-                <Heading>Contact Me</Heading>
+                <Heading fontSize={[4, 5, 6]} textAlign='center'>Contact Me</Heading>
                 <hr></hr>
+                <br></br>
                 <Flex mx={-2} mb={3}>
                     <Box width={3 / 4} px={2}>
-                        <Label htmlFor='name'>Name</Label>
+                        <Label fontSize={[2, 3, 4]} marginBottom={2} htmlFor='name'>Name</Label>
                         <Input
                             id='name'
                             name='name'
                             onChange={this.handleChange}
-
                         />
                     </Box>
                 </Flex>
 
                 <Box mb={3} width={3 / 4}>
-                    <Label htmlFor='email'>Email</Label>
+                    <Label fontSize={[2, 3, 4]} marginBottom={2} htmlFor='email'>Email</Label>
                     <Input
                         id='email'
                         name='email'
                         type='email'
                         onChange={this.handleChange}
-
                     />
                 </Box>
 
                 <Flex mx={-2} mb={3}>
                     <Box width={3 / 4} px={2}>
-                        <Label htmlFor='location'>Comments</Label>
+                        <Label fontSize={[2, 3, 4]} marginBottom={2} htmlFor='location'>Comments</Label>
                         <Textarea
                             id='message'
                             name='message'
                             type='textarea'
                             onChange={this.handleChange}
                         >
-
                         </Textarea>
                     </Box>
                 </Flex>

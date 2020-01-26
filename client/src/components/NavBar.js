@@ -2,9 +2,11 @@ import React from 'react'
 import {
     Box,
     Flex,
-    Link
+    Link,
+    Image
 } from 'rebass';
 import '../App.css'
+import profilePic from '../assets/images/profilePic.jpg'
 
 class NavBar extends React.Component {
     render() {
@@ -16,7 +18,12 @@ class NavBar extends React.Component {
                 color='white'
                 bg='black'
                 alignItems='center'>
-                <Link fontSize={[3, 4, 5]} p={2} fontWeight='bold' variant='nav' href='/'>Portfolio</Link>
+                <Link fontSize={[3, 4, 5]} p={2} marginLeft={2} variant='avatar' href='/'>
+                    <Image sx={{
+                        borderRadius: 8,
+                    }} src={profilePic} />
+
+                </Link>
                 <Box mx='auto' />
                 <Link fontSize={[3, 4, 5]} variant='nav' href='https://docs.google.com/document/d/16W_dKgtt6Cmp8hbCrA0m1I2M0Lt00a0-06X4OtrRoG4/edit?usp=sharing' target='_blank'>Resume</Link>
                 <Link fontSize={[3, 4, 5]} variant='nav' href='https://www.linkedin.com/in/carlo-ortega/' target='_blank'>Linkedin</Link>

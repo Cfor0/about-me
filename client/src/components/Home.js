@@ -25,8 +25,11 @@ function Home() {
                     bg: 'gray',
                 }}>
                 <About></About>
+                <br></br>
+                <br></br>
+                <br></br>
                 <Contact></Contact>
-                <Box height='300px'></Box>
+                <Box height='100px'></Box>
             </Box>
             
             <Footer></Footer>
