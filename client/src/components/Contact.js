@@ -64,7 +64,6 @@ class Contact extends React.Component {
                         id='email'
                         name='email'
                         type='email'
-                        placeholder='jane@example.com'
                         onChange={this.handleChange}
 
                     />
@@ -77,7 +76,6 @@ class Contact extends React.Component {
                             id='message'
                             name='message'
                             type='textarea'
-                            placeholder='comments'
                             onChange={this.handleChange}
                         >
 

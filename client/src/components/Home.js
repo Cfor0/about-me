@@ -18,7 +18,7 @@ function Home() {
                     px: 4,
                     py: 4,
                     height: ['100%'],
-                    backgroundImage: 'url(https://images.unsplash.com/photo-1495111372246-c54c2700dfc7?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=768&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=1024)',
+                    backgroundImage: 'url(https://images.unsplash.com/photo-1514483127413-f72f273478c3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1024&q=80)',
                     backgroundSize: 'cover',
                     // borderRadius: 8,
                     color: 'white',
