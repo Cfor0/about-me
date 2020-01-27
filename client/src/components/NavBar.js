@@ -16,11 +16,13 @@ class NavBar extends React.Component {
                 px={2}
                 py={2}
                 color='white'
-                bg='black'
+                bg='primary'
                 alignItems='center'>
                 <Link fontSize={[3, 4, 5]} p={2} marginLeft={2} variant='avatar' href='/'>
                     <Image sx={{
-                        borderRadius: 8,
+                          width: 50,
+                          height: 48,
+                          borderRadius: 9,
                     }} src={profilePic} />
 
                 </Link>
