@@ -3,6 +3,7 @@ import { ThemeProvider } from 'emotion-theming';
 import theme from '@rebass/preset';
 import About from './About';
 import Contact from './Contact'
+import Skills from './Skills';
 import {
     Box,
 } from 'rebass';
@@ -26,7 +27,7 @@ function Home() {
                 }}>
                 <About></About>
                 <br></br>
-                <br></br>
+                <Skills></Skills>
                 <br></br>
                 <Contact></Contact>
                 <Box height='100px'></Box>
