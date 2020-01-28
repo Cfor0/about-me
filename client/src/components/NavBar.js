@@ -2,11 +2,10 @@ import React from 'react'
 import {
     Box,
     Flex,
-    Link,
-    Image
+    Link
 } from 'rebass';
 import '../App.css'
-import profilePic from '../assets/images/profilePic.jpg'
+// import profilePic from '../assets/images/profilePic.jpg'
 
 class NavBar extends React.Component {
     render() {
@@ -18,14 +17,15 @@ class NavBar extends React.Component {
                 color='white'
                 bg='primary'
                 alignItems='center'>
-                <Link fontSize={[3, 4, 5]} p={2} marginLeft={2} variant='avatar' href='/'>
-                    <Image
+                <Link fontSize={[3, 4, 5]} p={2} marginLeft={2} variant='nav' href='/'>
+                    Home
+                    {/* <Image
                         src={profilePic}
                         sx={{
                             width: ['100%'],
                             height: ['100%'],
                             borderRadius: 9,
-                        }} />
+                        }} /> */}
 
                 </Link>
                 <Box mx='auto' />
