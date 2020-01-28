@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 const path = require('path');
 const app = express()
-const config = require('./secret')
+const config = require('./secret1')
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
