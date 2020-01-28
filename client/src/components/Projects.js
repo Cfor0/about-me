@@ -13,6 +13,8 @@ import PeruseForBrews from '../assets/images/PeruseForBrews.gif';
 import ClickyGame from '../assets/images/ClickyGame.gif';
 import CustomerView from '../assets/images/customer-view.gif';
 import Footer from './Footer'
+// import bindingDark from '../assets/images/bindingDark.png'
+
 
 
 
@@ -30,6 +32,7 @@ class Projects extends React.Component {
                             px: 4,
                             py: 4,
                             // height: ['100%'],
+                            // backgroundImage: {bindingDark},
                             // backgroundImage: 'url(https://images.unsplash.com/photo-1477346611705-65d1883cee1e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1024&q=80)',
                             // borderRadius: 8,
                             color: 'white',

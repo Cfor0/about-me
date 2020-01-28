@@ -17,7 +17,7 @@ function About() {
 
             <Box width={1/4} paddingTop={5}>
                 <Image sx={{
-                    borderRadius: 8,
+                    borderRadius: 9999,
                 }} src={profilePic} />
             </Box>
 

@@ -9,6 +9,7 @@ import {
 } from 'rebass';
 import NavBar from './NavBar'
 import Footer from './Footer'
+// import fabricDark from '../assets/images/fabricDark.png'
 import '../App.css'
 
 function Home() {
@@ -20,8 +21,9 @@ function Home() {
                     px: 4,
                     py: 4,
                     height: ['100%'],
+                    // backgroundImage: {fabricDark},
                     // backgroundImage: 'url(https://images.unsplash.com/photo-1514483127413-f72f273478c3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1024&q=80)',
-                    backgroundSize: 'cover',
+                    // backgroundSize: 'cover',
                     // borderRadius: 8,
                     color: 'white',
                     bg: 'gray',
