@@ -25,13 +25,12 @@ class Projects extends React.Component {
             <ThemeProvider theme={theme}>
                 <NavBar />
                 <Flex>
-                    <Box
+                    <Box id='backgroundProjects'
                         sx={{
                             px: 4,
                             py: 4,
-                            height: ['100%'],
-                            backgroundImage: 'url(https://images.unsplash.com/photo-1477346611705-65d1883cee1e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1024&q=80)',
-                            backgroundSize: 'cover',
+                            // height: ['100%'],
+                            // backgroundImage: 'url(https://images.unsplash.com/photo-1477346611705-65d1883cee1e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1024&q=80)',
                             // borderRadius: 8,
                             color: 'white',
                             bg: 'gray',

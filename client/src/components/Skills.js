@@ -3,7 +3,6 @@ import {
     Flex,
     Box,
     Heading,
-    Text,
     Image
 } from 'rebass';
 import reactPic from '../assets/images/react.png'
