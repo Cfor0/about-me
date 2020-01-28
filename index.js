@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 const path = require('path');
 const app = express()
+const config = require('./secret')
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
@@ -24,6 +25,8 @@ else {
 
 app.post('/api/form', (req, res) => {
     console.log(req.body)
+    const email = config.email;
+    const password = config.password
     nodemailer.createTestAccount((err, account) => {
         const htmlEmail = `
         <h3>Contact Details</h3>
@@ -44,8 +47,8 @@ app.post('/api/form', (req, res) => {
                 rejectUnauthorized: false
             },
             auth: {
-                user: 'cfor0@outlook.com',
-                pass: '55f#97Co'
+                user: email,
+                pass: password
             },
             // tls: {
             //     rejectUnauthorized: false
