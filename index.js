@@ -59,8 +59,8 @@ app.post('/api/form', (req, res) => {
         })
 
         let mailOptions = {
-            from: 'cfor0@outlook.com',
-            to: 'cfor0@outlook.com',
+            from: 'port1925@outlook.com',
+            to: 'port1925@outlook.com',
             replyTo: 'test@testaccount.com',
             subject: 'New Message From Portfolio',
             text: req.body.message,

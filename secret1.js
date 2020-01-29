@@ -1,4 +1,4 @@
 module.exports = {
-    email: 'cfor0@outlook.com',
-    password: '55f#97Co'
+    email: 'port1925@outlook.com',
+    password: 'MyP&sSw0rdF0rTh1s'
 }
