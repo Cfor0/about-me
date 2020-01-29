@@ -6,6 +6,24 @@ import Projects from './components/Projects';
 
 
 class App extends React.Component {
+  state = {
+    message: "",
+    error: "",
+    eee: "",
+    text: ""
+  };
+  
+  componentDidMount = () => this.fetchAPIMessage();
+
+  fetchAPIMessage = async () => {
+    try {
+      const res = await fetch(`/api/message`);
+      const { message } = await res.json();
+      this.setState({ message });
+    } catch (err) {
+      console.error(err);
+    }
+  };
   render() {
     return (
       <Router>
